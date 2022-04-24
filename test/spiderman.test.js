@@ -1,6 +1,16 @@
-describe("Test Suite Dummy Description", () => {
-    test('Case 1 Dummy', () => {
-      const resultOfSomething = 1 + 2
-      expect(resultOfSomething).toBe(18);
+const Spiderman = require("./../app/spiderman")
+
+describe("Unit Test for Spiderman class", () => {
+    test('1) Create an spiderman object', () => {
+      //Codigo que necesitemos
+      //Instanciar un objeto Spiderman con esta informacion
+      const andrewGarfield = new Spiderman("Spiderman Sony", 31, "Andrew Garfield", 2, "Sony")
+
+      //Validadores para que corra segun lo que queremos
+      expect(andrewGarfield.name).toBe("Spiderman Sony")
+      expect(andrewGarfield.edad).toBe(31)
+      expect(andrewGarfield.actor).toBe("Andrew Garfield")
+      expect(andrewGarfield.peliculas).toBe(2)
+      expect(andrewGarfield.cine).toBe("Sony")
     });
   })
