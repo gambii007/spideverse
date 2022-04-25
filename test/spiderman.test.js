@@ -13,4 +13,8 @@ describe("Unit Test for Spiderman class", () => {
       expect(andrewGarfield.peliculas).toBe(2)
       expect(andrewGarfield.cine).toBe("Sony")
     });
+    test('2) Use the method getInfo', () =>{
+        const tomholland = new Spiderman("Spiderman Marvel", 25, "Tom Holland", 5, "Marvel Studio")
+        expect(tomholland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel Studio")
+    });
   })
